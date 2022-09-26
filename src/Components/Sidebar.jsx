@@ -3,6 +3,7 @@ import { PencilLine } from 'phosphor-react';
 import styles from './Sidebar.module.css';
 
 import coverSidebar from '../assets/cover-sidebar.png'
+import { Avatar } from './Avatar';
 
 export function Sidebar() {
   return (
@@ -10,10 +11,8 @@ export function Sidebar() {
       <img className={styles.cover} src={coverSidebar} alt="Capa do Perfil na Sidebar" />
 
       <div className={styles.profile}>
-        <img 
-          className={styles.avatar}
-          src="https://avatars.githubusercontent.com/u/61847070?v=4" 
-        />
+
+        <Avatar  src="https://github.com/sirwhod.png" />
 
         <strong>Rodrigo Brandão</strong>
         <span>Web Developer</span>
